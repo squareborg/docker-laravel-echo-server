@@ -6,6 +6,7 @@ if [[ "$1" == 'init' ]]; then
     set -- laravel-echo-server "$@"
 fi
 
+# Delete dangling lock file
 if [[ -f /app/laravel-echo-server.json ]]; then
     rm /app/laravel-echo-server.lock
 fi
