@@ -7,7 +7,7 @@ if [[ "$1" == 'init' ]]; then
 fi
 
 # Delete dangling lock file
-if [[ -f /app/laravel-echo-server.json ]]; then
+if [[ -f /app/laravel-echo-server.lock ]]; then
     rm /app/laravel-echo-server.lock
 fi
 
